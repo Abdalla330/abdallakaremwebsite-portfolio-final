@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -e
+
+cd "$(dirname "$0")"
+
+export PORT="${PORT:-8080}"
+
+npm install
+
+if command -v pm2 >/dev/null 2>&1; then
+  pm2 start index.js --name abdalla-website --update-env
+  pm2 save
+else
+  npm start
+fi

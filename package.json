@@ -1,0 +1,21 @@
+{
+  "name": "abdallakaremwebsite-portfolio",
+  "version": "2.0.0",
+  "description": "Professional IT infrastructure and data center portfolio deployed with Node.js, AWS EC2 and PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.883.0",
+    "@aws-sdk/lib-storage": "^3.883.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.26"
+  }
+}

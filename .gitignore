@@ -1,0 +1,6 @@
+node_modules/
+.env
+app.log
+npm-debug.log*
+.DS_Store
+start-ec2.sh
