@@ -202,7 +202,9 @@ function page(title, body) {
     .hero-grid { min-height:615px; display:grid; grid-template-columns:1.05fr .82fr .28fr; align-items:stretch; }
     .hero-copy { padding:82px 42px 70px 0; display:flex; flex-direction:column; justify-content:center; }
     .hero h1 { margin:12px 0 12px; font-size:clamp(48px,6.6vw,82px); line-height:.95; letter-spacing:-.045em; color:#0a2b54; }
-    .hero-role { font-size:clamp(20px,2vw,29px); color:var(--blue); font-weight:800; margin-bottom:14px; }
+    .hero-role { font-size:clamp(20px,2vw,29px); color:var(--blue); font-weight:800; margin-bottom:6px; }
+    .hero-email { display:inline-block; width:max-content; color:#36536e; font-size:15px; font-weight:700; margin-bottom:12px; transition:.2s; }
+    .hero-email:hover { color:var(--blue); }
     .hero-skills { color:#36536e; max-width:760px; font-weight:600; }
     .hero-actions { display:flex; gap:13px; flex-wrap:wrap; margin-top:29px; }
     .btn { display:inline-flex; align-items:center; justify-content:center; gap:9px; padding:13px 20px; border-radius:8px; font-weight:800; border:1px solid var(--blue); transition:.2s; }
@@ -415,6 +417,7 @@ app.get("/", (req, res) => {
           <div class="eyebrow">Building reliable infrastructure for better data</div>
           <h1>Abdullahi Mohamed Karim </h1>
           <div class="hero-role">Data Center and IT Infrastructure Professional</div>
+          <a class="hero-email" href="mailto:Abdalamhd00@gmail.com">✉ Abdalamhd00@gmail.com</a>
           <div class="hero-skills">Server Administration &nbsp;•&nbsp; Database Management &nbsp;•&nbsp; Cloud Infrastructure &nbsp;•&nbsp; Data Collection Systems &nbsp;•&nbsp; Docker &nbsp;•&nbsp; PostgreSQL &nbsp;•&nbsp; AWS &nbsp;•&nbsp; Cybersecurity</div>
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View My Work</a>
